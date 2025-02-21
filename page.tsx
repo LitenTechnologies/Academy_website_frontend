@@ -19,7 +19,10 @@ export default function Home() {
             <Link href="#faculty" className="text-gray-600 hover:text-blue-600">
               Faculty
             </Link>
-            <Link href="#testimonials" className="text-gray-600 hover:text-blue-600">
+            <Link
+              href="#testimonials"
+              className="text-gray-600 hover:text-blue-600"
+            >
               Testimonials
             </Link>
             <Link href="#contact" className="text-gray-600 hover:text-blue-600">
@@ -35,18 +38,58 @@ export default function Home() {
         <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
           <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-8 md:mb-0">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">Ace the IAS Exam with Confidence</h1>
-              <p className="text-xl mb-6">Join India's premier coaching institute for aspiring civil servants</p>
-              <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white">
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                Ace the IAS Exam with Confidence
+              </h1>
+              <p className="text-xl mb-6">
+                Join India's premier coaching institute for aspiring civil
+                servants
+              </p>
+              <Button
+                size="lg"
+                className="bg-orange-500 hover:bg-orange-600 font-bold text-white"
+              >
                 Start Your Journey
               </Button>
             </div>
-            <div className="md:w-1/2">
-              <img
-                src="/placeholder.svg?height=300&width=400"
-                alt="IAS aspirants studying"
-                className="rounded-lg shadow-lg"
-              />
+            <div className="md:w-[45%] bg-white p-6 rounded-lg shadow-lg">
+              <h2 className="text-2xl font-bold text-center text-blue-600 mb-4">
+                Start Your Learning Journey now!
+              </h2>
+              <form className="space-y-4">
+                <Input type="text" placeholder="Your Name" className="w-full" />
+                <Input
+                  type="email"
+                  placeholder="Your Email"
+                  className="w-full"
+                />
+                <Input type="tel" placeholder="Your Phone" className="w-full" />
+                <select className="w-full p-2 border rounded-md text-gray-600">
+                  <option value="">Select Course</option>
+                  <option value="prelims">Prelims Foundation</option>
+                  <option value="mains">Mains Intensive</option>
+                  <option value="prelims-mains">
+                    Prelims-cum-Mains Course
+                  </option>
+                  <option value="interview">Interview Preparation</option>
+                  <option value="affairs">Current Affairs</option>
+                </select>
+                <select className="w-full p-2 border rounded-md text-gray-600">
+                  <option value="">Select Mode of Learning</option>
+                  <option value="online">Online</option>
+                  <option value="offline">Offline</option>
+                  <option value="hybrid">Hybrid</option>
+                </select>
+                <select className="w-full p-2 border rounded-md text-gray-600">
+                  <option value="">Preferred Batch Timing</option>
+                  <option value="morning">Morning (9 AM - 12 PM)</option>
+                  <option value="afternoon">Afternoon (1 PM - 4 PM)</option>
+                  <option value="evening">Evening (6 PM - 9 PM)</option>
+                </select>
+                <Button className="w-full bg-orange-500 hover:bg-orange-600 font-bold text-white">
+                  Register Now
+                </Button>
+              </form>
             </div>
           </div>
         </section>
@@ -54,7 +97,9 @@ export default function Home() {
         {/* Features Section */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Why Choose IAS Master?</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">
+              Why Choose IAS Master?
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 {
@@ -65,19 +110,26 @@ export default function Home() {
                 {
                   icon: Users,
                   title: "Expert Faculty",
-                  description: "Learn from experienced IAS officers and subject experts",
+                  description:
+                    "Learn from experienced IAS officers and subject experts",
                 },
                 {
                   icon: Trophy,
                   title: "Proven Track Record",
                   description: "Consistently high success rate in UPSC exams",
                 },
-                { icon: Star, title: "Personalized Mentoring", description: "One-on-one guidance for every aspirant" },
+                {
+                  icon: Star,
+                  title: "Personalized Mentoring",
+                  description: "One-on-one guidance for every aspirant",
+                },
               ].map((feature, index) => (
                 <Card key={index} className="text-center">
                   <CardContent className="pt-6">
                     <feature.icon className="w-12 h-12 mx-auto mb-4 text-blue-600" />
-                    <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+                    <h3 className="text-xl font-semibold mb-2">
+                      {feature.title}
+                    </h3>
                     <p className="text-gray-600">{feature.description}</p>
                   </CardContent>
                 </Card>
@@ -108,18 +160,38 @@ export default function Home() {
         {/* Courses Section */}
         <section id="courses" className="py-16">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Our Courses</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">
+              Our Courses
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
-                { title: "Prelims Foundation", duration: "4 months", price: "₹40,000" },
-                { title: "Mains Intensive", duration: "6 months", price: "₹60,000" },
-                { title: "Interview Preparation", duration: "2 months", price: "₹25,000" },
+                {
+                  title: "Prelims Foundation",
+                  duration: "4 months",
+                  price: "₹40,000",
+                },
+                {
+                  title: "Mains Intensive",
+                  duration: "6 months",
+                  price: "₹60,000",
+                },
+                {
+                  title: "Interview Preparation",
+                  duration: "2 months",
+                  price: "₹25,000",
+                },
               ].map((course, index) => (
                 <Card key={index}>
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-semibold mb-2">{course.title}</h3>
-                    <p className="text-gray-600 mb-4">Duration: {course.duration}</p>
-                    <p className="text-2xl font-bold text-blue-600 mb-4">{course.price}</p>
+                    <h3 className="text-xl font-semibold mb-2">
+                      {course.title}
+                    </h3>
+                    <p className="text-gray-600 mb-4">
+                      Duration: {course.duration}
+                    </p>
+                    <p className="text-2xl font-bold text-blue-600 mb-4">
+                      {course.price}
+                    </p>
                     <Button className="w-full">Enroll Now</Button>
                   </CardContent>
                 </Card>
@@ -131,7 +203,9 @@ export default function Home() {
         {/* Faculty Section */}
         <section id="faculty" className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Our Expert Faculty</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">
+              Our Expert Faculty
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
@@ -167,7 +241,9 @@ export default function Home() {
         {/* Testimonials Section */}
         <section id="testimonials" className="py-16">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">What Our Students Say</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">
+              What Our Students Say
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {[
                 {
@@ -194,7 +270,9 @@ export default function Home() {
                       />
                       <div>
                         <h4 className="font-semibold">{testimonial.name}</h4>
-                        <p className="text-blue-600">Rank: {testimonial.rank}</p>
+                        <p className="text-blue-600">
+                          Rank: {testimonial.rank}
+                        </p>
                       </div>
                     </div>
                   </CardContent>
@@ -207,13 +285,19 @@ export default function Home() {
         {/* Contact Section */}
         <section id="contact" className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Get in Touch</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">
+              Get in Touch
+            </h2>
             <div className="max-w-lg mx-auto">
               <form className="space-y-4">
                 <Input type="text" placeholder="Your Name" />
                 <Input type="email" placeholder="Your Email" />
                 <Input type="tel" placeholder="Your Phone" />
-                <textarea className="w-full p-2 border rounded-md" rows={4} placeholder="Your Message"></textarea>
+                <textarea
+                  className="w-full p-2 border rounded-md"
+                  rows={4}
+                  placeholder="Your Message"
+                ></textarea>
                 <Button className="w-full">Send Message</Button>
               </form>
             </div>
@@ -241,11 +325,12 @@ export default function Home() {
             </nav>
           </div>
           <div className="mt-8 text-center">
-            <p>&copy; {new Date().getFullYear()} IAS Master. All rights reserved.</p>
+            <p>
+              &copy; {new Date().getFullYear()} IAS Master. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
-
