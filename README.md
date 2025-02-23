@@ -21,8 +21,8 @@ The   Academy Website   is a platform designed to provide educational resources,
   🔧 Installation & Setup
  # 1️⃣ Clone the Repository
 ```bash
- git clone https://github.com/yourusername/academy-website.git
- cd academy-website
+ git clone [https://github.com/yourusername/academy-website.git](https://github.com/LitenTechnologies/Academy_website_frontend.git)
+ cd frontend
 ```
 
  # 2️⃣ Install Dependencies
@@ -76,7 +76,5 @@ The website will be available at   http://localhost:3000/
 4. Push to the branch (`git push origin feature-branch`).
 5. Create a   Pull Request  .
 
-  📜 License
-This project is licensed under the   MIT License  .
 
 
