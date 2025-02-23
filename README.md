@@ -1,22 +1,22 @@
 # Academy Website
 
   📌 Project Overview
-The  *Academy Website * is a platform designed to provide educational resources, course materials, and interactive learning experiences. It allows students to enroll in courses, access study materials, and engage with instructors.
+The   Academy Website   is a platform designed to provide educational resources, course materials, and interactive learning experiences. It allows students to enroll in courses, access study materials, and engage with instructors.
 
   🚀 Features
-- 🔹  *User Authentication * (Signup/Login)
-- 🔹  *Course Catalog * (Browse and enroll in courses)
-- 🔹  *Resource Library * (PDFs, videos, and quizzes)
-- 🔹  *Interactive Dashboard * (User progress tracking)
-- 🔹  *Admin Panel * (Manage courses, users, and content)
-- 🔹  *Responsive Design * (Mobile-friendly UI)
+- 🔹   User Authentication   (Signup/Login)
+- 🔹   Course Catalog   (Browse and enroll in courses)
+- 🔹   Resource Library   (PDFs, videos, and quizzes)
+- 🔹   Interactive Dashboard   (User progress tracking)
+- 🔹   Admin Panel   (Manage courses, users, and content)
+- 🔹   Responsive Design   (Mobile-friendly UI)
 
   🛠️ Tech Stack
--  *Frontend: * React.js, Bootstrap, Tailwind CSS
--  *Backend: * Node.js, Express.js
--  *Database: * MongoDB
--  *Authentication: * JWT (JSON Web Token)
--  *Storage: * Multer (For file uploads)
+-   Frontend:   React.js, Bootstrap, Tailwind CSS
+-   Backend:   Node.js, Express.js
+-   Database:   MongoDB
+-   Authentication:   JWT (JSON Web Token)
+-   Storage:   Multer (For file uploads)
 
   🔧 Installation & Setup
  # 1️⃣ Clone the Repository
@@ -57,26 +57,26 @@ UPLOADS_DIR=uploads
  cd frontend
  npm start
 ```
-The website will be available at  *http://localhost:3000/ *
+The website will be available at   http://localhost:3000/  
 
   🛡️ Security Considerations
-- Use  *HTTPS * for secure communication.
-- Implement  *role-based access control (RBAC) * for user permissions.
-- Sanitize user input to prevent  *XSS and SQL injection attacks *.
+- Use   HTTPS   for secure communication.
+- Implement   role-based access control (RBAC)   for user permissions.
+- Sanitize user input to prevent   XSS and SQL injection attacks  .
 
   📝 Future Enhancements
-- 🔹  *Live Classes & Video Streaming *
-- 🔹  *AI-Powered Course Recommendations *
-- 🔹  *Student-Teacher Forum & Discussions *
+- 🔹   Live Classes & Video Streaming  
+- 🔹   AI-Powered Course Recommendations  
+- 🔹   Student-Teacher Forum & Discussions  
 
   👥 Contributing
 1. Fork the repository.
 2. Create a new branch (`feature-branch`).
 3. Commit changes (`git commit -m 'Added new feature'`).
 4. Push to the branch (`git push origin feature-branch`).
-5. Create a  *Pull Request *.
+5. Create a   Pull Request  .
 
   📜 License
-This project is licensed under the  *MIT License *.
+This project is licensed under the   MIT License  .
 
 
