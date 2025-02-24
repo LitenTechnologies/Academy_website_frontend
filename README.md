@@ -3,6 +3,7 @@
   📌 Project Overview
 The   Academy Website   is a platform designed to provide educational resources, course materials, and interactive learning experiences. It allows students to enroll in courses, access study materials, and engage with instructors.
 
+
   🚀 Features
 - 🔹   User Authentication   (Signup/Login)
 - 🔹   Course Catalog   (Browse and enroll in courses)
